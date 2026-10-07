@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dinda Ageng Syafrudin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 30px 15px;
+        }
+
+        /* CONTAINER CV */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* HEADER & FOTO PROFIL */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 15px auto;
+            display: block;
+            border: 4px solid #3498db;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* SECTION STYLES */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-text {
+            text-align: justify;
+            color: #4a5568;
+        }
+
+        /* ITEM LISTINGS (PENDIDIKAN, PENGALAMAN, ORGANISASI) */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 1.05rem;
+        }
+
+        .date {
+            font-size: 0.88rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #4a5568;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* SKILLS */
+        .skills-grid div {
+            margin-bottom: 10px;
+            color: #4a5568;
+        }
+
+        .skills-grid strong {
+            color: #2d3748;
+        }
+
+        /* RESPONSIVE DESIGN FOR MOBILE */
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 20px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+
+            .date {
+                margin-top: 2px;
+                margin-bottom: 4px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+>
+    <div class="cv-container">
+        <!-- HEADER -->
+        <header>
+            <h1>DINDA AGENG SYAFRUDIN</h1>
+            <img src="foto.png" alt="Foto Dinda Ageng Syafrudin" class="profile-img">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱 +62 812-8266-7894</span>
+                </div>
+                <div class="contact-item">
+                    <span>✉️ <a href="mailto:dindasyafrudin@gmail.com">dindasyafrudin@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <span>📍 Jakarta, Indonesia</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- PROFIL -->
+        <section>
+            <h2>PROFIL</h2>
+            <p class="profile-text">
+                Lulusan dari SMA Negeri 10 Samarinda, jurusan MIPA. Kini menjadi mahasiswa aktif di jurusan Sistem Informasi, Telkom University Jakarta. Saya memiliki minat pada desain ilustrasi digital dan penulisan kreatif. Berpengalaman dalam kepanitiaan sekolah khususnya dalam bidang dekorasi dan konten digital, serta dikenal sebagai pribadi yang adaptif dan mampu bekerja sama dalam tim.
+            </p>
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section>
+            <h2>PENDIDIKAN</h2>           
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Telkom University Jakarta</span>
+                    <span class="date">September 2025 – Sekarang</span>
+                </div>
+                <div class="subtitle">S1 Sistem Informasi</div>
+                <ul>
+                    <li>IPK saat ini: 3,51 (skala 4,00)</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">SMA Negeri 10 Samarinda</span>
+                    <span class="date">Juli 2022 – Februari 2025</span>
+                </div>
+                <div class="subtitle">Jurusan MIPA</div>
+                <ul>
+                    <li>Rata-rata nilai rapor: 87,23</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN & PROYEK -->
+        <section>
+            <h2>PENGALAMAN & PROYEK</h2>        
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Perancangan Aplikasi "Evently" — Design Thinking</span>
+                </div>
+                <ul>
+                    <li>Merancang UI/UX aplikasi Evently dengan menyusun tampilan dan alur penggunaan aplikasi berdasarkan kebutuhan pengguna.</li>
+                    <li>Melaksanakan user testing untuk mengevaluasi pengalaman pengguna dan mengidentifikasi masukan untuk pengembangan aplikasi.</li>
+                    <li>Menyusun laporan hasil user testing, sekaligus mengembangkan kemampuan dalam analisis kebutuhan pengguna, evaluasi desain, dan dokumentasi hasil pengujian.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ORGANISASI & KEGIATAN -->
+        <section>
+            <h2>ORGANISASI & KEGIATAN</h2>         
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Anggota — Kepanitiaan Dekorasi HUT Sekolah</span>
+                    <span class="date">Oktober 2022 – Desember 2023</span>
+                </div>
+                <ul>
+                    <li>Berkontribusi dalam mempersiapkan dan menghasilkan dekorasi untuk mendukung pelaksanaan perayaan HUT sekolah.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Sub-koordinator — Klub Seni Athravasa SMAN 10 Samarinda</span>
+                    <span class="date">Februari 2024 – Maret 2025</span>
+                </div>
+                <ul>
+                    <li>Mengkoordinasikan anggota dan kegiatan di bidang seni tradisional.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- KETERAMPILAN -->
+        <section>
+            <h2>KETERAMPILAN</h2>
+            <div class="skills-grid">
+                <div><strong>Hard Skills:</strong> Microsoft Office (Word, Excel, Powerpoint), Google Docs & Sheets, Desain Digital (Canva, Figma, IbisPaint X)</div>
+                <div><strong>Soft Skills:</strong> Kerja Sama & Koordinasi Tim, Adaptif, Komunikasi, Manajemen Waktu, Bahasa Inggris (Intermediate)</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

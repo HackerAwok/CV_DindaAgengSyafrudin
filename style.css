@@ -1,0 +1,212 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8edf2;
+    color: #303846;
+    line-height: 1.6;
+}
+
+/* =========================
+   CV
+========================= */
+.cv-container {
+    width: 850px;
+    max-width: 95%;
+    margin: 35px auto;
+    padding: 45px 55px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(31, 45, 61, 0.12);
+}
+
+/* =========================
+   FOTO
+========================= */
+.profile-img {
+    display: block;
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d7e1e8;
+    margin: 0 auto 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    border-bottom: 3px solid #527a8b;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 29px;
+    letter-spacing: 2px;
+    color: #243746;
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    color: #667783;
+}
+
+.contact-item a {
+    color: #527a8b;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   SECTION
+========================= */
+section {
+    margin-bottom: 27px;
+}
+
+section h2 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    color: #527a8b;
+    border-bottom: 1px solid #d5dfe5;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+}
+
+/* =========================
+   PROFIL
+========================= */
+.profile-text {
+    font-size: 14px;
+    text-align: justify;
+    color: #4d5963;
+}
+
+/* =========================
+   ITEM
+========================= */
+.item {
+    margin-bottom: 20px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2f4352;
+}
+
+.date {
+    font-size: 13px;
+    color: #7b8b96;
+    white-space: nowrap;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #697781;
+    margin-top: 2px;
+}
+
+/* =========================
+   LIST
+========================= */
+ul {
+    margin-top: 7px;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 14px;
+    color: #4d5963;
+    margin-bottom: 5px;
+}
+
+li::marker {
+    color: #527a8b;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.skills-grid div {
+    padding: 14px 16px;
+    background-color: #f4f7f9;
+    border-left: 4px solid #527a8b;
+    color: #4d5963;
+}
+
+.skills-grid strong {
+    color: #2f4352;
+}
+
+/* =========================
+   HOVER
+========================= */
+.item:hover {
+    transform: translateX(3px);
+    transition: 0.2s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+
+    .cv-container {
+        padding: 30px 25px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .date {
+        white-space: normal;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
